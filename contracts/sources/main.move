@@ -141,7 +141,9 @@ module my_addrx::ScholarshipPlatform {
 
     // Add a donor address to the global list if it's not already there
     fun add_donor_address(donor_address: address) acquires DonorAddresses {
-        assert!(exists<DonorAddresses>(GLOBAL_DONOR_ADDRESS), E_DONOR_LIST_NOT_INITIALIZED);
+        if (!exists<DonorAddresses>(GLOBAL_DONOR_ADDRESS)) {
+            return // If the DonorAddresses resource doesn't exist, just return without doing anything
+        };
         let donor_addresses = borrow_global_mut<DonorAddresses>(GLOBAL_DONOR_ADDRESS);
 
         if (!vector::contains(&donor_addresses.addresses, &donor_address)) {

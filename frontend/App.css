@@ -1,0 +1,75 @@
+/* App.css */
+.landing-layout {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.header {
+    background-color: #001529;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    line-height: 64px;
+}
+
+.content {
+    padding: 50px 20px;
+}
+
+.hero-section {
+    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: #fff;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.cta-button {
+    margin-top: 20px;
+}
+
+.features-section {
+    padding: 50px 20px;
+}
+
+.features-content {
+    text-align: center;
+}
+
+.cta-section {
+    background-color: #001529;
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-content {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001529;
+    color: #fff;
+}

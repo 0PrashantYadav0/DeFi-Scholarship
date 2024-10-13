@@ -1,5 +1,5 @@
 export const NETWORK = import.meta.env.VITE_APP_NETWORK ?? "testnet";
-export const MODULE_ADDRESS = "0xb90886ecca8e23df9c948d5ed36e77f5a31442a736736dce72aa4ea6a912b7d2";
+export const MODULE_ADDRESS = "0x25c8f2d9f9f8da2e858ce241b17fc32b9a157977dd1c8089b39115a5c459b4e7";
 export const CREATOR_ADDRESS = import.meta.env.VITE_COLLECTION_CREATOR_ADDRESS;
 export const COLLECTION_ADDRESS = import.meta.env.VITE_COLLECTION_ADDRESS;
 export const IS_DEV = Boolean(import.meta.env.DEV);

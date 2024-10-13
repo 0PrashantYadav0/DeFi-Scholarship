@@ -363,6 +363,7 @@ module my_addrx::ScholarshipPlatform {
 
         assert!(scholarship.donor == donor_address, E_UNAUTHORIZED_ACCESS_NOT_OWNER);
 
+        // Remove this check to fix the E_INVALID_SCHOLARSHIP_IS_CLOSED error
         assert!(scholarship.is_open, E_INVALID_SCHOLARSHIP_IS_CLOSED);
 
         assert!(timestamp::now_seconds() > scholarship.end_time, E_INVALID_SCHOLARSHIP_HAS_TIME_LEFT_PLEASE_WAIT_FOR_IT);

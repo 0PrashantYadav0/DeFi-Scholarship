@@ -255,6 +255,9 @@ module my_addrx::ScholarshipPlatform {
 
     // Function to find the donor address for a given scholarship ID
     fun get_donor_address_of_scholarship(scholarship_id: u64): address acquires DonorAddresses, Scholarships {
+        // Check if DonorAddresses resource exists
+        assert!(exists<DonorAddresses>(GLOBAL_DONOR_ADDRESS), E_DONOR_LIST_NOT_INITIALIZED);
+        
         // Fetch the list of all donor addresses
         let donor_addresses = borrow_global<DonorAddresses>(GLOBAL_DONOR_ADDRESS);
         
@@ -278,7 +281,7 @@ module my_addrx::ScholarshipPlatform {
             };
         };
         
-        return @0x0 // Return a default address if no match is found
+        abort(E_INVALID_SCHOLARSHIP) // Abort if no matching scholarship is found
     }
 
     public entry fun apply_for_scholarship(

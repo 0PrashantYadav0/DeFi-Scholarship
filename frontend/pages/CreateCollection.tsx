@@ -13,7 +13,10 @@ import { MODULE_ADDRESS } from "@/constants";
 import { InputViewFunctionData } from "@aptos-labs/ts-sdk";
 import { DatePicker, Form, message, Select, Table } from "antd";
 import moment from "moment";
+import { Layout } from "antd";
+
 const { Column } = Table;
+const { Footer } = Layout;
 
 export function CreateCollection() {
   // Wallet Adapter provider
@@ -554,6 +557,7 @@ export function CreateCollection() {
           </Card>
         </div>
       </div>
+      <Footer className="footer">Scholarship Platform ©2024 | All Rights Reserved</Footer>
     </>
   );
 }

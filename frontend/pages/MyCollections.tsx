@@ -9,6 +9,9 @@ import { Form, Input, List, message, Select, Table } from "antd";
 import "dotenv/config";
 import { useEffect, useState } from "react";
 const { Column } = Table;
+import { Layout } from "antd";
+
+const { Footer } = Layout;
 
 interface Scholarship {
   name: string;
@@ -238,6 +241,7 @@ export function MyCollections() {
           </Card>
         </div>
       </div>
+      <Footer className="footer">Scholarship Platform ©2024 | All Rights Reserved</Footer>
     </>
   );
 }

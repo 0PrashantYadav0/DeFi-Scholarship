@@ -6,7 +6,7 @@ export const ConnectWalletAlert: FC = () => {
   if (COLLECTION_ADDRESS) return null;
 
   return (
-    <div className="md:flex-row gap-6 px-4 max-w-screen-xl mx-auto w-full">
+    <div className="md:flex-row justify-center gap-6 px-4 max-w-screen-xl mx-auto w-full">
       <WarningAlert title="Collection ID not set">
         This page is placeholder content, to render your collection:
         <ol className="list-decimal list-inside">

@@ -7,7 +7,7 @@ export function Header() {
     <div className="flex items-center backdrop-blur-lg justify-between px-4 py-2 max-w-screen-xl mx-auto w-full flex-wrap md:flex-nowrap">
       <h1 className="display font-mono">
         <Link to="/" style={{ fontFamily: "unset" }}>
-          Di-Fi Scholarship
+          De-Fi Scholarship
         </Link>
       </h1>
 

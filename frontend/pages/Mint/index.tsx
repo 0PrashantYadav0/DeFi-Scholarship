@@ -27,8 +27,8 @@ export function Mint() {
         </div>
         <div className='h-[100vh] w-full -z-10'>
           <Spline
-            className="h-[100vh] w-full"
-            scene="https://prod.spline.design/L21c9LrruiJi4qkn/scene.splinecode" 
+            className="h-[100vh] w-full zoom-in-150"
+            scene="https://prod.spline.design/901TS4Hm93yt3T9V/scene.splinecode"
           />
         </div>
         <Footer className="footer relative bottom-0">Scholarship Platform ©2024 | All Rights Reserved</Footer>

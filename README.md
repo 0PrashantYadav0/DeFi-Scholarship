@@ -1,6 +1,6 @@
 # DeFi-Scholarship
 
-**DeFi-Scholarship** is a decentralized platform for managing scholarships, utilizing blockchain technology for secure and transparent transactions. Built on the Aptos blockchain, it integrates smart contracts, a chatbot powered by Langchain and Mistral, and a React-based frontend for seamless user interaction.
+**DeFi-Scholarship** is a decentralized platform for managing scholarships, utilizing blockchain technology for secure and transparent transactions. Built on the Aptos blockchain, it integrates smart contracts, a chatbot powered by Gemini, and a React-based frontend for seamless user interaction.
 
 ## Table of Contents
 
